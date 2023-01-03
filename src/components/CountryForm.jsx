@@ -25,7 +25,7 @@ function CountryForm() {
       countryInfoData.append('capital', countryInfo.capital)
       countryInfoData.append('countryImage', countryImage)
 
-      const res = await axios.post('http://localhost:8080/countries', countryInfoData, {withCredentials: true} );
+      const res = await axios.post(`${process.env.REACT_APP_SERVER_URL}/countries`, countryInfoData, {withCredentials: true} );
       addCountry(res.data);
     } catch (err) {
       console.log(err);

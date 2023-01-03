@@ -8,7 +8,7 @@ function Country({ country }) {
   const { deleteCountry } = useContext(AppContext);
   const handleDelete = async () => {
     try {
-      const res = await axios.delete(`http://localhost:8080/countries/${country.id}`, {withCredentials: true});
+      const res = await axios.delete(`${process.env.REACT_APP_SERVER_URL}/countries/${country.id}`, {withCredentials: true});
       if (res.data.ok) {
         deleteCountry(country.id);
       }

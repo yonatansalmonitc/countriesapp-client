@@ -22,7 +22,7 @@ function App() {
 
   const fetchCountries = async () => {
     try {
-      const res = await axios.get(`http://localhost:8080/countries`, {withCredentials: true});
+      const res = await axios.get(`${process.env.REACT_APP_SERVER_URL}/countries`, {withCredentials: true});
       console.log(res.data);
       setCountryList(res.data);
     } catch (err) {

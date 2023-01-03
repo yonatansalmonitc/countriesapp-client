@@ -18,7 +18,7 @@ export default function Login() {
         email,
         password,
       };
-      const res = await axios.post('http://localhost:8080/users/login', userInfo, {withCredentials: true});
+      const res = await axios.post(`${process.env.REACT_APP_SERVER_URL}/users/login`, userInfo, {withCredentials: true});
       console.log(res.data)
       if(res.data.ok) {
         setCurrentUser(res.data.userId)

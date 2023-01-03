@@ -16,7 +16,7 @@ export default function SignUp() {
   const handleSignUp = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:8080/users/signup', userDetails)
+      const res = await axios.post(`${process.env.REACT_APP_SERVER_URL}/users/signup`, userDetails)
       if(res.data.ok) {
         navigate('/')
       }
