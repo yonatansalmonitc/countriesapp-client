@@ -1,0 +1,160 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.formContainer > form {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  box-shadow: 5px 10px #888888;
+}
+
+.textInput {
+  margin-bottom: 6px;
+}
+
+.country {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: beige;
+}
+.country:hover {
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.25);
+}
+.country .header {
+  display: flex;
+  justify-content: space-between;
+}
+.country .header .date {
+  font-size: 0.75em;
+  color: #888;
+}
+
+.country .header .delete {
+  font-size: 0.75em;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+.country .header .delete:hover {
+  transform: scale(2.5);
+  font-weight: bold;
+  transition: transform 0.5s, font-weight 0.5s;
+}
+
+.country .countryBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.EditCountryModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoInput {
+  margin: 20px 0;
+  min-height: 200px;
+  min-width: 400px;
+}
+
+.addTodo {
+  background-color: #6161ff;
+  min-width: 200px;
+  min-height: 30px;
+  border-radius: 6%;
+}
+
+.todosListContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.todo {
+  border: 1px solid #6161ff;
+  margin: 10px 10px;
+  padding: 10px;
+}
+
+.editModal {
+  min-width: 80%;
+  font-size: 30px;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.btn-submit {
+  margin-top: 8px;
+}
+
+.link {
+  margin-top: 8px;
+}
+
+
+.linkContainer {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin: 18px;
+  padding: 0;
+}
+
+.linkContainer a {
+  text-decoration: none;
+  margin: 12px;
+}
+
+.userForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.btn-submit {
+  margin-top: 8px;
+}
+
+.link {
+  margin-top: 8px;
+}
+
+
+.countryImage {
+  height: 100px;
+}
