@@ -13,12 +13,6 @@ function App() {
   const [token, setToken] = useState(localStorage.getItem('token') || '')
   const [currentUser, setCurrentUser] = useState('')
 
-// useEffect(() => {
-// const token = localStorage.getItem('token');
-// if(token) {
-//   setToken(token)
-// }
-// }, [])
 
   const fetchCountries = async () => {
     try {
